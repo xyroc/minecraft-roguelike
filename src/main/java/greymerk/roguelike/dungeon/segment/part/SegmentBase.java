@@ -19,7 +19,7 @@ public abstract class SegmentBase implements ISegment {
 		
 		if(level.hasNearbyNode(new Coord(pos))) return;
 		
-		if(isValidWall(editor, dir, new Coord(pos))){
+		if(editor.alwaysBuildSegments() || isValidWall(editor, dir, new Coord(pos))){
 			genWall(editor, rand, level, dir, theme, new Coord(pos));
 		}
 	}

@@ -1,5 +1,7 @@
 package greymerk.roguelike;
 
+import greymerk.roguelike.command.CommandBuildRoom;
+import greymerk.roguelike.command.CommandBuildSegment;
 import greymerk.roguelike.command.CommandRoguelike;
 import net.minecraft.command.ICommandManager;
 import net.minecraft.command.ServerCommandManager;
@@ -46,5 +48,7 @@ public class Roguelike {
 		ICommandManager command = server.getCommandManager();
 		ServerCommandManager serverCommand = ((ServerCommandManager) command);
 		serverCommand.registerCommand(new CommandRoguelike());
+		serverCommand.registerCommand(new CommandBuildRoom());
+		serverCommand.registerCommand(new CommandBuildSegment());
 	}
 }

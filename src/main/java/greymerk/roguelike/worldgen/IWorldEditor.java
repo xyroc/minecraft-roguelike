@@ -41,5 +41,10 @@ public interface IWorldEditor {
 	IPositionInfo getInfo(Coord pos);
 
 	Coord findNearestStructure(VanillaStructure type, Coord pos);
+
+    // To allow segments to be built through air by command
+    default boolean alwaysBuildSegments() {
+        return false;
+    }
 	
 }
