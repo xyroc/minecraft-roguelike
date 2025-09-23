@@ -1,29 +1,25 @@
-*.class
-
-/.gradle/
-/.metadata/
-/.settings/
-/assets/
-/bin/
-/run/
-/build/
-/config/
-/crash-reports/
-/logs/
-/mods/
-/debug/
-/resourcepacks/
-/saves/
-/.classpath
-/.project
-/options.txt
-/screenshots
-/*.txt
-/*.log
-/server.properties
-/world
-/usernamecache.json
-/usercache.json
-/asm
-/eclipse/
+# eclipse
+bin
 *.launch
+.settings
+.metadata
+.classpath
+.project
+
+# idea
+out
+*.ipr
+*.iws
+*.iml
+.idea
+
+# gradle
+build
+.gradle
+
+# other
+eclipse
+run
+
+# Files from Forge MDK
+forge*changelog.txt
